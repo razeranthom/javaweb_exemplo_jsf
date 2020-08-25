@@ -9,7 +9,6 @@ import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
-import javax.faces.view.ViewScoped;
 
 
 /**
@@ -17,7 +16,7 @@ import javax.faces.view.ViewScoped;
  * @author razer
  */
 @Named(value = "exemploMB")
-@ViewScoped
+@RequestScoped
 public class ExemploMB implements Serializable {
     private String texto;
     private int numero;
